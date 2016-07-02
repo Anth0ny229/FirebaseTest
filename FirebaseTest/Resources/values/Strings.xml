@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+  <!-- UI Strings -->
+  <string name="SignIn">Sign In</string>
+  <string name="SignOut">Sign Out</string>
+  <string name="RevokeAccess">Revoke Access</string>
+  <string name="SubscribeToNews">Subscribe To News</string>
+  <string name="LogToken">Log Token</string>
+  
+  <!-- Firebase Setings -->
+  <string name="ApplicationName">FirebaseTest</string>
+  <string name="ServerClientId">client_id from google-services.json</string>
+  <string name="ApiKey">current_key from google-services.json</string>
+  <string name="ApplicationId">mobilesdk_app_id from google-services.json</string>
+  <string name="DatabaseUrl">storage_bucket from google-services.json</string>
+  <string name="SenderId">from firebase console settings cloud messaging</string>
+  <string name="ServerKey">Should not be included</string>
+
+  <!-- Twitter Login Strings -->
+  <string name="TwitterConsumerKey">twitter dev project consumer key</string>
+  <string name="TwitterConsumerSecret">twitter dev project consumer secret</string>
+  <string name="TwitterRequestTokenUrl">https://api.twitter.com/oauth/request_token</string>
+  <string name="TwitterAuthorizeUrl">https://api.twitter.com/oauth/authorize</string>
+  <string name="TwitterAccessTokenUrl">https://api.twitter.com/oauth/access_token</string>
+  <string name="TwitterCallbackUrl">https://PROJECTNAME-fdbdc.firebaseapp.com/__/auth/handler  callback url I set</string>
+
+  <!-- Facebook Login Strings -->
+  <string name="FacebookClientId">facebook dev project client id</string>
+  <string name="FacebookScope"></string>
+  <string name="FacebookAuthorizeUrl">https://m.facebook.com/dialog/oauth/</string>
+  <string name="FacebookRedirectUrl">https://PROJECTNAME-fdbdc.firebaseapp.com/__/auth/handler callback url I set</string>
+
+</resources>
