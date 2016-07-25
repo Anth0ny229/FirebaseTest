@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using Android.App;
 using Android.Content;
 using Android.Gms.Auth.Api;
@@ -16,7 +16,7 @@ using Firebase.Auth;
 
 namespace FirebaseTest
 {
-    [Activity(Label = "FirebaseTest", Icon = "@drawable/icon", MainLauncher = true)]
+    [Activity(Label = "FirebaseTest", Icon = "@drawable/icon")]
     public class GoogleLogin : FragmentActivity, GoogleApiClient.IOnConnectionFailedListener,
         View.IOnClickListener, IOnCompleteListener, FirebaseAuth.IAuthStateListener
     {
