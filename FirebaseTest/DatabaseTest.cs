@@ -7,7 +7,7 @@ using Firebase.Database;
 
 namespace FirebaseTest
 {
-    [Activity(Label = "DatabaseTest")]
+    [Activity(Label = "DatabaseTest", MainLauncher = true)]
     public class DatabaseTest : Activity, IValueEventListener
     {
         private const string Tag = "DatabaseTest";
@@ -30,19 +30,18 @@ namespace FirebaseTest
             mDatabase = db.GetReference("favorites");
             mDatabase.AddListenerForSingleValueEvent(this);
 
-            //mDatabase.SetValue("Hello, World!");
+            mDatabase.SetValue("Hello, World!");
         }
 
         private void SubmitPost()
         {
            // string userId = GetUid();
             mDatabase.AddListenerForSingleValueEvent(this);
-
         }
 
         public void OnDataChange(DataSnapshot dataSnapshot)
         {
-            Log.Debug(Tag, "Database Change");
+            Log.Debug(Tag, "Database Change: " + dataSnapshot.Value);
         }
 
         public void OnCancelled(DatabaseError databaseError)
